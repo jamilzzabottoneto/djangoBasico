@@ -1,0 +1,34 @@
+/* Estilo do corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo dos títulos */
+h1 {
+  color: #ffeb3b;
+}
+
+h2 {
+  color: #ff9800;
+}
+
+/* Estilo dos parágrafos */
+p {
+  color: #e0e0e0;
+  line-height: 1.6;
+}
