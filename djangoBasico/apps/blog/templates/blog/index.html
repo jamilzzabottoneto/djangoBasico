@@ -1,1 +1,4 @@
-{% extends "base.html" %}{% block texto %}{{text}}{% endblock texto %}
+{% extends "base.html" %}
+{% block posts %}
+    {% include "postBlock/postBlock.html"%}
+{% endblock posts %}

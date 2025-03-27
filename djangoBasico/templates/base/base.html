@@ -3,12 +3,8 @@
   {% include "head/head.html" %}
   <body>
     {% include "menu/menu.html" %}
-    <div class="container">
-      <h1>{% block texto %}{% endblock texto %}</h1>
-      <h2>Seção 1</h2>
-      <p>Este é um parágrafo de exemplo dentro da primeira seção.</p>
-      <h2>Seção 2</h2>
-      <p>Aqui está outro parágrafo demonstrando o uso de tags HTML.</p>
-    </div>
+    <main class="posts">
+      <div class="container">{% block posts %}{% endblock posts %}</div>
+    </main>
   </body>
 </html>
