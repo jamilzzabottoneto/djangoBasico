@@ -57,3 +57,19 @@ p {
   background-color: #555;
   border-radius: 5px;
 }
+
+.article__post{
+    display: grid;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.6);
+}
+@media (min-width: 600px){
+    .article__post{
+        grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
+    }
+}
+.post__tittle{
+}
+.post__body{
+}
