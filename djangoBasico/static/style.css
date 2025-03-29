@@ -48,15 +48,26 @@ body {
     display: grid;
     gap: 15px;
     padding: 15px;
-    box-shadow: 5px 2px 5px rgba(0, 0, 0, 0.6);
+    box-shadow: 10px 5px 10px 5px rgba(0, 0, 0, 0.6);
     border-radius: 10px;
 }
 @media (min-width: 600px) {
-    .article__post{
+    .article__post:not(:has(.single-post)){
         grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));
     }
 }
 .post__tittle{
 }
 .post__body{
+}
+.link_post a, p {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 8px 12px;
+    display: block;
+}
+.link_post a:hover {
+    background-color: #555;
+    border-radius: 5px;
 }
