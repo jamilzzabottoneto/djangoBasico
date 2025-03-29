@@ -1,6 +1,10 @@
 <article class="article__post">
   <header class="post__tittle">
-    <p>{{post.title}}</p>
+    <p>
+      <a href="{% url 'blog:post' post.id %}">
+        {{post.title}}
+      </a>
+    </p>
   </header>
   <h3 class="post__body">{{post.body}}</h3>
 </article>
