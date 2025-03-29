@@ -1,7 +1,7 @@
 {% extends "base.html" %}
+{% block texto %}{{text}}{% endblock texto %}
 {% block posts %}
-    {% include "postBlock/postBlock.html"%}
-    {% include "postBlock/postBlock.html"%}
-    {% include "postBlock/postBlock.html"%}
-
+    {% for post in posts %}
+        {% include "postBlock/postBlock.html"%}
+    {% endfor %}
 {% endblock posts %}

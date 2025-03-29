@@ -1,10 +1,28 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="pt-BR">
-  {% include "head/head.html" %}
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
   <body>
-    {% include "menu/menu.html" %}
-    <main>
-      <div class="container">{% block posts %}{% endblock posts %}</div>
+    <div class="menu-container">
+      <ul class="menu">
+        <li><a href="{% url "home:home" %}">Home</a></li>
+        <li><a href="{% url "blog:home" %}">Blog</a></li>
+        <li><a href="{% url "blog:coments" %}">Comentarios</a></li>
+      </ul>
+    </div>
+    <h1>
+      {% if text %}
+        {% block texto %}{% endblock texto %}
+      {% endif %}
+    </h1>
+    <main class="container">
+      <div>{% block posts %}{% endblock posts %}</div>
     </main>
   </body>
 </html>

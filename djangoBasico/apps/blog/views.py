@@ -1,10 +1,13 @@
 from django.shortcuts import render
+from djangoBasico.data import posts
+
 
 # Create your views here.
 def index(request):
     context = {
         'text':'Essa é a view do BLOG do projeto',
         'title': 'Esse é o titulo do Blog',
+        'posts': posts,
         }
     return render(request, 'blog/index.html', context)
 
